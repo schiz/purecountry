@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html ng-app="pureCountry">
+<title>16_oformlenie</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lte IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="bitrix/js/main/core/css/core.css?13944656338964" type="text/css"  rel="stylesheet" />
+<link href="http://fnt.webink.com/wfs/webink.css/?project=DA826768-D454-4650-AF75-1954262DE22A&fonts=3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,FA4379E2-2038-8F3F-1CCD-9D7F6C1BE854:f=ProximaNova-ExtrabldIt,7ADDF267-02FA-4E7A-F098-EF6D9CFEF9AE:f=ProximaNova-Black,DD341213-BCCD-C52B-39B2-FF9E7464B6E5:f=ProximaNova-ThinIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,D658C100-EB60-0878-7701-BA465DF17739:f=ProximaNovaT-Thin,38D80777-BBB8-AAF3-8C21-AAA9AD92B6E6:f=ProximaNova-BlackIt,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,D8F30418-0E92-EBB4-6408-D220574EF53E:f=ProximaNova-Extrabld,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/bootstrap/css/bootstrap.min.css?1393404441102387" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/js/fancybox/jquery.fancybox.css?13987709075061" type="text/css"  rel="stylesheet" />
+<link href="bitrix/js/socialservices/css/ss.css?13934044414347" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/components/bitrix/catalog.section.list/mainMenu/style.css?13940778294527" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/styles.css?13939756134020" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/template_styles.css?13987786429611" type="text/css"  data-template-style="true"  rel="stylesheet" />
+
+
+
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script><script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','USER_ID':'','SERVER_TIME':'1400079068','SERVER_TZ_OFFSET':'14400','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'380c6ace091e93c4c15c959f84914ea4','SITE_ID':'s1'});(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+<script type="text/javascript" src="bitrix/js/main/core/core.js?139447090978055"></script>
+<script type="text/javascript" src="bitrix/js/main/core/core_ajax.js?139446563329674"></script>
+<script type="text/javascript" src="bitrix/js/main/session.js?13934044413157"></script>
+<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular.min.js"></script>
+<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular-route.min.js"></script>
+<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular-animate.min.js"></script>
+<script type="text/javascript" src="bitrix/js/socialservices/ss.js?13934044411419"></script>
+
+<script type="text/javascript">
+bxSession.Expand(1440, '380c6ace091e93c4c15c959f84914ea4', false, 'af3f3f5daaae6302c3d3568f95891c66');
+</script>
+
+
+
+<script type="text/javascript" src="bitrix/templates/food/js/respond.js?13934044414046"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/jquery.js?1393404441281214"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/fancybox/jquery.fancybox.pack.js?139340444123135"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/popup_auth.js?13987851423211"></script>
+<script type="text/javascript" src="bitrix/templates/food/bootstrap/js/bootstrap.min.js?139340444127957"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/accounting.min.js?13934044413133"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/script.js?1394474880726"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/filters.js?1393404441445"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/directives.js?13934044411471"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/ui-bootstrap-0.10.0.min.js?139340444141012"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/ui-bootstrap-tpls-0.10.0.min.js?139340444153004"></script>
+<script type="text/javascript" src="bitrix/templates/food/components/bitrix/catalog.section.list/mainMenu/script.js?13939617294125"></script>
+
+<body>
+  <div class="container all_content no-blue-border checkout">
+    <header class="pagehead">
+      <nav class="navbar navbar-fixed-top">
+        <div class="container mainmenu-container">
+          <div class="logo-place">
+            <a class="url" href="/"><img class="logo" src="bitrix/templates/food/images/logo.png" alt="Чистый край"></a>
+          </div>
+        <nav class="mainmenu">
+          <a href="/benefits/" class="active">ПОЛЬЗАведение</a>
+          <a href="/products/">ПРОДУКТознание</a>
+          <a href="/recipes/">РЕЦЕПТология</a>
+          <a href="/about/">О проекте</a>
+          <a href="/contact/">Контакты</a>
+        </nav>
+        <div id="basket_small_block">
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-addon">se</span>
+          </div>
+          <a href="#sign-in-pop-up" class="log-in" title="Авторизоваться">
+            <img src="bitrix/templates/food/images/login.png" alt="Авторизоваться"/>
+          </a>
+          <a href="/personal/cart/"   title="В корзину">
+            <img src="bitrix/templates/food/images/basket_small_img.png" alt="Корзина"/>
+          </a>
+        </div>
+        <nav class="catalog-sections bg" ng-app="catalogMenu">
+          <nav class="bg-grey-links">
+            <a href="#">Молоко</a>
+            <a href="#">Мясо</a>
+            <a href="#">Птицы</a>
+            <a href="#">Кулинария</a>
+            <a href="#">Овощи и фрукты</a>
+            <a href="#">Бакалея</a>
+            <a href="#">Наборы</a>
+          </nav>
+          <div class="links">
+            <a href="/catalog/#/milk/" class="milk">Молоко</a>
+            <a href="/catalog/#/meat/" class="meat">Мясо</a>
+            <a href="/catalog/#/fowl/" class="fowl">Птица</a>
+            <a href="/catalog/#/cookery/" class="cookery">Кулинария</a>
+            <a href="/catalog/#/fruit-vegetables/" class="fruit-vegetables">Овощи-фрукты</a>
+            <a href="/catalog/#/grocery/" class="grocery">Бакалея</a>
+            <a href="/catalog/#/sets/" class="sets">Наборы</a>
+          </div>
+        </nav>
+        <script>
+        var noScroll = false;
+        </script>    
+        </div>
+      </nav>
+    </header>
+    <section class="checkout-content">
+      <h1>Оформление заказа</h1>
+      <section class="contact-user">
+        <div class="row row-wrap">
+          <div class="col-md-3">
+            <h2>Контактное лицо</h2>
+          </div>
+          <div class="col-md-6 checkout-content-input">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="checkout-name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="checkout-surname">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="checkout-email">
+                </div>
+              </div>
+              <div class="col-md-6">
+               <div class="input-group">
+                <input type="text" class="form-control" id="checkout-phone">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 sign-in">
+            <p>Войдите под вашим аккаунтом если вы зарегестрированы</p>
+            <button type="button" class="btn">Войти</button>
+            <img src="bitrix/templates/food/images/sing_in_key.png">
+          </div>
+        </div>
+        <div class="row register">
+          <div class="col-md-6 col-md-offset-3">
+            <p>Пара слов о плюсах регистрации и о возможности заказать не регестрируясь.</p>
+          </div>
+          <div class="col-md-3">
+            <a href="">Зарегестрироваться</a>
+            <img src="bitrix/templates/food/images/register_icon.png">
+          </div>
+        </div>
+      </section>
+      <section class="delivery">
+        <div class="row row-wrap">
+          <div class="col-md-3">
+            <h2>Доставка</h2>
+          </div>
+          <div class="col-md-3">
+            <div class="checkout-link-wrap">
+              <a href="" class="checkout-link">Курьерская служба</a>
+            </div>
+            <div class="checkout-link-wrap">
+              <a href="" class="checkout-link">Самовывоз</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>
+                <div class="input-group adress">
+                  <input type="text" class="form-control" placeholder="АДРЕСС">
+                </div>
+              </li>
+              <li>
+                <p>Доставка осуществляется по Москве и ближайшему Подмосковью в будние дни.</p>
+              </li>  
+              <li>
+                <p>Доставка в пределах МКАД стоит 550 руб. Заказы от 3500 руб. доставляются бесплатно.</p>
+              </li>  
+              <li>
+                <p>Доставка за пределы МКАД — 400 руб. +100 руб за пересечение каждого 5-километрового отрезка от МКАД</p>
+              </li>  
+            </ul>
+          </div>
+        </div>  
+      </section>
+      <section class="payment">
+        <div class="row row-wrap">
+          <div class="col-md-3">
+            <h2>Способы оплаты</h2>
+          </div>
+          <div class="col-md-5 payment-method">
+            <div class="payment-method-wrap">
+              <div>
+                <img src="bitrix/templates/food/images/payments/1.png">
+              </div>
+              <a href="">Наличными курьеру</a>
+            </div>
+            <div class="payment-method-wrap">
+              <div>
+                <img src="bitrix/templates/food/images/payments/2.png">
+              </div>
+              <a href="">Оплата банковской картой при получении</a>
+            </div>
+            <div class="payment-method-wrap payment-method-wrap-disable">
+              <div>
+                <img src="bitrix/templates/food/images/payments/3.png">
+              </div>
+              <a href="">Оплата банковской картой онлайн</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <p>Пожалуйста, приготовьте сумму, указанную в заказе, без сдачи. Если вам нужна сдача, сообщите об этом курьеру, когда он позвонит вам, чтобы согласовать время доставки.</p>
+          </div>
+        </div>
+      </section> 
+      <section class="your-order">
+        <div class="row row-wrap">
+          <div class="col-md-2">
+            <h2>Ваш заказ</h2>
+          </div>
+          <div class="col-md-10">
+            <form class="col-xs-12">
+              <div class="row cart-row">
+                <div class="col-xs-10 col-xs-offset-1 cart-row-content">
+                  <div class="row">
+                    <div class="col-xs-2 category_item">Телятина</div>
+                    <div class="col-xs-4 title_item">
+                      <p>Лопатка на кости</p>
+                    </div>
+                    <div class="col-xs-2 col-xs-offset-1"><span class="quontity">10 шт</span></div>
+                    <div class="col-xs-2 price_item text-center pull-right">10 040 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row cart-row">
+                <div class="col-xs-10 col-xs-offset-1 cart-row-content">
+                  <div class="row">
+                    <div class="col-xs-2 category_item">Молоко</div>
+                      <div class="col-xs-4 title_item">
+                        <p>Молоко коровье, нормализованное, 1 л.</p>
+                      </div>
+                      <div class="col-xs-2 col-xs-offset-1"><span class="quontity">1 шт</span></div>
+                      <div class="col-xs-2 price_item text-center pull-right">10 040 Р</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row cart-row">
+                <div class="col-xs-10 col-xs-offset-1 cart-row-content">
+                  <div class="row">
+                    <div class="col-xs-2 category_item">Телятина</div>
+                    <div class="col-xs-4 title_item">
+                      <p>Шея без кости</p>
+                    </div>
+                    <div class="col-xs-2 col-xs-offset-1"><span class="quontity">10 шт</span></div>
+                    <div class="col-xs-2 price_item text-center pull-right">10 040 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row cart-row">
+                <div class="col-xs-10 col-xs-offset-1 cart-row-content">
+                  <div class="row">
+                    <div class="col-xs-2 category_item">Баранина</div>
+                    <div class="col-xs-4 title_item">
+                      <p>Вырезка</p>
+                    </div>
+                    <div class="col-xs-2 col-xs-offset-1"><span class="quontity">10 шт</span></div>
+                    <div class="col-xs-2 price_item text-center pull-right">10 040 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row cart-row">
+                <div class="col-xs-10 col-xs-offset-1 cart-row-content">
+                  <div class="row">
+                    <div class="col-xs-4 title_item col-xs-offset-2">
+                      <p>Доставка в пределах МКАД</p>
+                    </div>
+                    <div class="col-xs-2 price_item text-center pull-right">10 040 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 cart-footer">
+                  <div class="row all_price">
+                    <div class="col-xs-3">Редактировать</div>
+                    <div class="col-xs-1 col-xs-offset-5">Всего:</div>
+                    <div class="col-xs-3 text-right total-price pull-right"><h4>100 040 P</h4></div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section> 
+      <section class="extra">
+        <div class="row row-wrap">
+          <div class="col-md-3">
+            <h2>Дополнительно</h2>
+          </div>
+          <div class="col-md-9">
+            <div class="row extra-menu">
+              <div class="col-md-3">
+                <div class="extra-menu-link-wrap first-link">
+                  <a href="">Информировать о статусе заказа</a>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="extra-menu-link-wrap one-line">
+                  <a href="">SMS</a>
+                </div>  
+              </div>
+              <div class="col-md-4">
+                <div class="extra-menu-link-wrap one-line">
+                  <a href="">Звонок оператора</a>
+                </div>
+              </div>
+            </div>
+            <div class="row extra-comment">
+              <div class="col-md-8">
+                <form>
+                  <textarea type="text" placeholder="КОМЕНТАРИЙ"></textarea>
+                </form>
+              </div>
+              <div class="col-md-4">
+                <p>Тут имеет смысл написать про неработающий домофон, злую собаку и неработающий лифт.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="сheckout-button">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-4">
+            <button type="submit" class="btn btn-lg btn-primary pull-right btn-default bb-order">Оформить заказ</button>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+  <footer class="pagefoot set-footer">
+    <div class="container">
+      <div class="row footer_bg_holder">
+        <img src="bitrix/templates/food/images/footer_bg_970.png" class="footer_bg">
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-md-3 copyright">
+          © 2013 «Чистый Край»<br>
+          <span>Родина натуральных продуктов</span>
+        </div>
+        <div class="col-xs-6 col-md-4 contact">
+          <span class="phone">+7 495 988-26-87</span> <span class="clock">с 9:00 до 18:00</span><br>
+          Интернет-магазин работает без выходных<br>
+        </div>
+        <div class="clearfix visible-xs visible-sm"></div>
+        <div class="col-xs-6 col-md-3 delivery">
+          <a href="/delivery-and-payment/">Доставка и оплата</a>
+        </div>
+        <div class="col-xs-6 col-md-2">
+          <nav class="social pull-right clearfix">
+              <a target="_blank" href="http://vk.com" class="vk"></a>
+              <a target="_blank" href="http://facebook.com" class="fb"></a>
+              <a target="_blank" href="http://twitter.com" class="tw"></a>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-3 col-xs-6 contact">
+          <a href="/oferta.pdf">Публичная оферта</a>
+          <a href="http://www.consultant.ru/popular/consumerism/" target="_blank">Закон о защите прав потребителей</a>
+        </div>
+        <div class="col-xs-6 col-md-5 text-right developer"></div>
+      </div>
+    </div>
+  </footer>
+  <div id="open-auth-form"></div>
+  <section id="sign-in-pop-up">
+    <div class="popup-fon"><!--<div title="Close" id="myCloseID" class="fancybox-item fancybox-close" href="javascript:;"></div>-->
+      <div class="popup-form">
+        <h4>Вход</h4>
+          <form class="auth_form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="EMAIL">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="ПАРОЛЬ">
+            </div>
+            <input type="submit" class="btn btn-default" value="войти">
+          </form>
+          <a href="" class="forgot_pass">Забыли пароль?</a>
+          <div class="socwork">
+            <div class="bx-auth">
+              <form class="social-sign-in">
+                <div class="bx-auth-title"><p>ВОЙТИ КАК ПОЛЬЗОВАТЕЛЬ</p></div>
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-1 fb-link">
+                    <a href=""><i></i>ФЕЙСБУК</a>
+                  </div>
+                  <div class="col-md-5 vk-link">
+                    <a href=""><i></i>ВКОНТАКТЕ</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="reg_now">
+            <a href="" rel="nofollow">Зарегистрироваться</a>
+          </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,34 @@
+nav.multilevelmenu {
+	height: 2em;
+	clear: both;
+}
+	nav.multilevelmenu ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+		nav.multilevelmenu ul li {
+			float: left;
+			padding: 0.5em 1em;
+			background: white;
+			position: relative;
+		}
+			nav.multilevelmenu ul li:hover {
+				background: #ebebeb;
+			}
+			nav.multilevelmenu ul ul {
+				display: none;
+				position: absolute;
+				z-index: 18;
+				border: 1px solid #ddd;
+				box-shadow: #ddd 2px 2px 4px;
+			}
+				nav.multilevelmenu ul li:hover ul {
+					display: block;
+				}
+				nav.multilevelmenu ul ul li {
+					float: none;
+				}
+					nav.multilevelmenu ul ul li a {
+						display: block;
+					}

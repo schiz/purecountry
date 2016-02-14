@@ -1,0 +1,106 @@
+body .pagehead {
+	padding: 0;
+}
+.logo-place.index {
+	padding-top: 162px;
+	height: 707px;
+	width: 100%;
+}
+	.logo-place.index .logo-image-container {
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+		.logo-place.index .logo-image-container .logo-bg {
+			background: transparent url(images/logo_bg.png) center no-repeat;
+			background-size: contain;
+			padding-top: 32%;
+		}
+	@media (min-width: 1010px) {
+		.logo-place.index .logo-image-container .logo-bg {
+			padding-top: 325px;
+			background-size: 100% 325px;
+		}
+	}
+	.logo-place.index .logo {
+		left: 50%;
+		top: 230px;
+		margin-left: -142px;
+		width: 285px;
+		height: 147px;
+		transition: width .4s ease, height .4s ease, margin .4s ease, left .4s ease;
+	}
+		@media (max-width:1200px) { .logo-place.index .logo { width: 274px; height: 141px; top: 234px; margin-left: -137px; } }
+		@media (max-width:992px) { .logo-place.index .logo { width: 211px; height: 109px; top: 213px; margin-left: -106px; } }
+		@media (max-width:767px) { .logo-place.index .logo { width: 28.2%; height: auto; top: 162px; margin-left: -14.1%; margin-top: 7%; } }
+	.logo-place.index .slogan {
+		position: absolute;
+		color: #5F859D;
+		font-size: 29px;
+		font-family: "ProximaNova-Regular", sans-serif;
+		text-align: center;
+		width: 100%;
+		top: 577px;
+                letter-spacing: 7px;
+		line-height: 29px;
+		height: 29px;
+	}
+
+.t0 .logo-place.index .logo-image-container,
+.t1 .logo-place.index .logo-image-container {
+	position: fixed;
+}
+
+.t0 .logo-place.index .logo,
+.t1 .logo-place.index .logo {
+	position: fixed;
+	top: 68px;
+}
+	@media (max-width:1200px) { .t0 .logo-place.index .logo,.t1 .logo-place.index .logo { top: 73px; } }
+	@media (max-width:992px) { .t0 .logo-place.index .logo,.t1 .logo-place.index .logo { top: 87px; } }
+	@media (max-width:767px) { .t0 .logo-place.index .logo,.t1 .logo-place.index .logo { top: 0; } }
+.t1 .logo-place.index .slogan {
+	position: fixed;
+	left: 0;
+	top: 335px;
+}
+.t2 .logo-place.index .logo-image-container,
+.t3 .logo-place.index .logo-image-container {
+	top: 170px;
+}
+.t2 .logo-place.index .logo {
+	top: 400px;
+}
+	@media (max-width:1200px) { .t2 .logo-place.index .logo { top: 405px; } }
+	@media (max-width:992px) { .t2 .logo-place.index .logo { top: 383px; } }
+	@media (max-width:767px) { .t2 .logo-place.index .logo { top: 331px; } }
+.t2 .logo-place.index .slogan,
+.t3 .logo-place.index .slogan {
+	top: 666px;
+}
+.t3 .logo-place.index .logo,
+.t4 .logo-place.index .logo {
+	width: 101px;
+	height: 54px;
+	margin: 317px 0 0;
+	left: 22px;
+	top: 400px;
+}
+	@media (max-width:1200px) { .t3 .logo-place.index .logo,.t4 .logo-place.index .logo { top: 400px; } }
+	@media (max-width:992px) { .t3 .logo-place.index .logo,.t4 .logo-place.index .logo { top: 420px; } }
+.t4 {
+	position: relative;
+	z-index: 932;
+	margin-bottom: 90px;
+}
+.t4 .logo-place.index .logo-holder {
+	position: fixed;
+	top: -707px;
+}
+.t4 ~ .navbar {
+	position: fixed;
+	z-index: 900;
+	top: 0;
+	border: none;
+}

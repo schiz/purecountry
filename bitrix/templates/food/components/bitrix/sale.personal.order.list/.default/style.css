@@ -1,0 +1,33 @@
+.profile h2 {
+	margin-bottom: 28px;
+}
+.form-group h4 {
+	color: #666666;
+	font-size: 14px;
+	margin: 38px 0 20px 0;
+	font-family: 'ProximaNova-Regular';
+}
+.profile th {
+	font-family: 'ProximaNova-Semibold';
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: left;
+}
+.profile td{
+	font-size: 16px;
+	text-align: left;
+}
+.profile .table>tbody>tr>td {
+	padding: 14px 8px 14px 26px;
+	border-top: 1px dotted #cacaca;
+}
+.profile .table>thead>tr>th { padding: 10px 8px 8px 26px; }
+.profile td.delete a {
+	font-family: 'ProximaNova-Semibold';
+	font-size: 15px;
+	color: #000000;
+}
+	.profile td.delete a:hover { color: #5388a4; }
+	
+.profile .table { border-bottom: 1px solid #cacaca; }
+body .profile .table>thead>tr>th {border-bottom: 1px solid #cacaca;}

@@ -1,0 +1,1 @@
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.js")?>

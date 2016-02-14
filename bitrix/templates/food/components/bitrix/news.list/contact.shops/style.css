@@ -1,0 +1,75 @@
+.cm_info {
+	margin-top: 30px;
+        margin-bottom: 30px;
+}
+.cm_info h5 {
+	margin: 0 0 7px;
+	padding: 0;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.cm_info .c_info {
+	padding: 0;
+	margin: 0;
+	font-size: 24px;
+	font-family: 'ProximaNova-Semibold';
+}
+	.cm_info .c_info.phone { letter-spacing: 4px; }
+	.cm_info .c_info a { color: black; }
+
+.contact-block {
+	height: 550px;
+}
+
+.central-office {
+	margin-bottom: 64px;
+}
+
+.office-info {
+	color: white;
+	background: #5388a4;
+	padding-top: 20px;
+}
+	.office-info h4 {
+		padding-top: 25px;
+		font-size: 27px;
+		font-family: 'ProximaNova-Semibold';
+		background: url(images/chw.png) center bottom no-repeat;
+		padding-bottom: 26px;
+	}
+
+.office-address {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 19px;
+	font-family: 'ProximaNova-Semibold';
+}
+
+.office-phone {
+	padding-top: 0px;
+	padding-bottom: 15px;
+	font-size: 19px;
+	font-family: 'ProximaNova-Semibold';
+}	
+	
+.contact h3 {
+	margin-bottom: 28px;
+}
+
+.shops-map {
+	margin-bottom: 42px;
+}
+
+.shop-info {
+	margin-bottom: 60px;
+}
+.shop-info * {
+	line-height: 20px;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+.shop-info hgroup {
+	min-height: 60px;
+}

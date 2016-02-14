@@ -1,0 +1,35 @@
+.popup-form {
+	border: 3px solid pink;
+	border-radius: 10px;
+	padding: 0;
+}
+	.popup-form h2 {
+		margin-bottom: 22px;
+		margin-top: 25px;
+	}
+	.popup-form .auth_form { padding: 0 20px; }
+	.popup-form .btn-default { padding: 10px 40px; margin: 10px 0 20px 0; }
+	.popup-form .forgot_pass {
+		font-size: 12px;
+		color: #000000;
+		font-family: 'ProximaNova-Semibold';
+		margin-bottom: 28px;
+		display: block;
+	}
+	.popup-form .reg_now {
+		border-top: 1px dotted #b4b4b4;
+		padding: 14px 0 14px 0;
+		background: #f5f3f3;
+	}
+		.popup-form .reg_now a {
+			font-size: 16px;
+			color: #000;
+			text-transform: uppercase;
+			font-family: 'ProximaNova-Semibold';
+			letter-spacing: 2px;
+			
+		}
+		.popup-form .reg_now a:before {
+			content: url(images/reg_now.png);
+			padding-right: 15px;
+		}

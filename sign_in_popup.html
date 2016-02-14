@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="pureCountry">
+<title>pop_up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lte IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="bitrix/js/main/core/css/core.css?13944656338964" type="text/css"  rel="stylesheet" />
+<link href="http://fnt.webink.com/wfs/webink.css/?project=DA826768-D454-4650-AF75-1954262DE22A&fonts=3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,FA4379E2-2038-8F3F-1CCD-9D7F6C1BE854:f=ProximaNova-ExtrabldIt,7ADDF267-02FA-4E7A-F098-EF6D9CFEF9AE:f=ProximaNova-Black,DD341213-BCCD-C52B-39B2-FF9E7464B6E5:f=ProximaNova-ThinIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,D658C100-EB60-0878-7701-BA465DF17739:f=ProximaNovaT-Thin,38D80777-BBB8-AAF3-8C21-AAA9AD92B6E6:f=ProximaNova-BlackIt,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,D8F30418-0E92-EBB4-6408-D220574EF53E:f=ProximaNova-Extrabld,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/bootstrap/css/bootstrap.min.css?1393404441102387" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/js/fancybox/jquery.fancybox.css?13987709075061" type="text/css"  rel="stylesheet" />
+<!-- fancybox -->
+<link rel="stylesheet" href="bitrix/templates/food/js/fancybox_update/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<link href="bitrix/js/socialservices/css/ss.css?13934044414347" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/components/bitrix/catalog.section.list/mainMenu/style.css?13940778294527" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/styles.css?13939756134020" type="text/css"  rel="stylesheet" />
+<link href="bitrix/templates/food/template_styles.css?13987786429611" type="text/css"  data-template-style="true"  rel="stylesheet" />
+
+
+
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script><script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','USER_ID':'','SERVER_TIME':'1400079068','SERVER_TZ_OFFSET':'14400','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'380c6ace091e93c4c15c959f84914ea4','SITE_ID':'s1'});(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+<script type="text/javascript" src="bitrix/js/main/core/core.js?139447090978055"></script>
+<script type="text/javascript" src="bitrix/js/main/core/core_ajax.js?139446563329674"></script>
+<script type="text/javascript" src="bitrix/js/main/session.js?13934044413157"></script>
+<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular.min.js"></script>
+<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular-route.min.js"></script>
+<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular-animate.min.js"></script>
+<script type="text/javascript" src="bitrix/js/socialservices/ss.js?13934044411419"></script>
+
+<script type="text/javascript">
+bxSession.Expand(1440, '380c6ace091e93c4c15c959f84914ea4', false, 'af3f3f5daaae6302c3d3568f95891c66');
+</script>
+
+<!-- fancybox -->
+<script type="text/javascript" src="bitrix/templates/food/js/fancybox_update/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/fancybox_update/jquery.mousewheel-3.0.4.pack.js"></script>
+
+<script type="text/javascript" src="bitrix/templates/food/js/respond.js?13934044414046"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/jquery.js?1393404441281214"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/fancybox/jquery.fancybox.pack.js?139340444123135"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/popup_auth.js?13987851423211"></script>
+<script type="text/javascript" src="bitrix/templates/food/bootstrap/js/bootstrap.min.js?139340444127957"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/accounting.min.js?13934044413133"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/script.js?1394474880726"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/filters.js?1393404441445"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/directives.js?13934044411471"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/ui-bootstrap-0.10.0.min.js?139340444141012"></script>
+<script type="text/javascript" src="bitrix/templates/food/js/ui-bootstrap-tpls-0.10.0.min.js?139340444153004"></script>
+<script type="text/javascript" src="bitrix/templates/food/components/bitrix/catalog.section.list/mainMenu/script.js?13939617294125"></script>
+
+
+
+<body class="pop-up">
+  <section id="sign-in-pop-up">
+    <!-- <div class="filter"></div> -->
+    <div class="popup-fon"><!--<div title="Close" id="myCloseID" class="fancybox-item fancybox-close" href="javascript:;"></div>-->
+      <div class="popup-form text-center clearfix">
+        <h4>Вход</h4>
+          <form method="post"  name="system_auth_form6zOYVN" class="auth_form" target="_top" action="/auth/?login=yes&amp;ajax=Y">
+            <input type="hidden" name="backurl" value="/success_auth.php?type=auth" />
+            <input type="hidden" name="AUTH_FORM" value="Y" />
+            <input type="hidden" name="TYPE" value="AUTH" />
+            <input type="hidden" name="auth_submit_button" value="Y">
+            <div class="form-group">
+              <input type="text" name="USER_LOGIN" class=" form-control" placeholder="EMAIL">
+            </div>
+            <div class="form-group">
+              <input type="password" class=" form-control" name="USER_PASSWORD" placeholder="ПАРОЛЬ">
+            </div>
+            <input type="submit" class="btn btn-default" value="войти">
+          </form>
+          <a href="/forgot_password/?forgot_password=yes&amp;backurl=%2Fauth%2F%3Fajax%3DY" class="forgot_pass" rel="nofollow">Забыли пароль?</a>
+          <div class="socwork">
+            <div class="bx-auth">
+              <form method="post" name="bx_auth_servicesform" target="_top" action="/auth/?login=yes&amp;amp;ajax=Y" class="social-sign-in">
+                <div class="bx-auth-title"><p>ВОЙТИ КАК ПОЛЬЗОВАТЕЛЬ</p></div>
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-1 fb-link">
+                    <a href=""><i></i>ФЕЙСБУК</a>
+                  </div>
+                  <div class="col-md-5 vk-link">
+                    <a href=""><i></i>ВКОНТАКТЕ</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="reg_now">
+            <a href="/registration/?register=yes&amp;backurl=%2Fauth%2F%3Fajax%3DY" rel="nofollow">Зарегистрироваться</a>
+          </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

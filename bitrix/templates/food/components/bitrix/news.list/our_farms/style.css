@@ -1,0 +1,26 @@
+.map {
+	height: 400px;
+	margin-bottom: 42px;
+}
+.farm-info {
+	min-height: 80px;
+	margin-bottom: 32px;
+	font-size: 14px;
+}
+.icon {
+	width: 50px;
+}
+.no-icon {
+	width: 50px;
+	height: 50px;
+	background: #ccc;
+	border-radius: 50%;
+}
+.farm-info h4.media-heading {
+	font-size: 15px;
+	line-height: 20px;
+	margin: 0;
+}
+.farm-info p {
+	padding: 0;
+}

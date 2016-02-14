@@ -1,0 +1,91 @@
+.quantity-widget-wrap { margin-top: -5px; }
+.cart-row-content { min-height: 108px;}
+.cart-row:hover {
+	background: #f7f7f7;
+}
+.cart-row:hover .row, 
+.cart-row:hover + .cart-row .cart-row-content .row { border-top: 1px dotted #f7f7f7; }
+.cart-row:hover .btn-link.remove { display: block; }
+.cart-row:first-child .cart-row-content {border-top: 1px solid #cacaca;}
+
+.cart-row .row {
+	border-top: 1px dotted #ccc;
+	padding: 40px 0 10px 0;
+}
+.cart-row:first-child .cart-row-content .row {border-top: none;}
+.category_item {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 2px;
+}
+.title_item a {
+	font-size: 16px;
+	line-height: 16px;
+	color: #000;
+}
+.price_item  {
+	font-size: 17px;
+	color: #000;
+	font-family:"ProximaNova-Semibold",sans-serif;
+}
+/* .image_item { margin-top: -30px; } */
+.cart-row .btn-link.remove {
+	text-indent: -9999px;
+	background: url(images/f_delete.png) center 44px no-repeat;
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	padding-bottom: 55px;
+	display: none;
+}
+	.cart-row .btn-link.remove:focus { outline: none; }
+	
+.cart-footer {
+	border-top: 3px solid #5388a4;
+}	
+.cart-footer .all_price {
+	border-bottom: 1px solid #cacaca;
+	padding: 18px 0;
+}
+.cart-footer .issue_order {
+	padding: 18px 0;
+}
+.issue_order_text { font-size: 14px; line-height: 19px; margin-top: 8px; }
+.clear_cart {
+	padding-left: 30px;
+	background: url(images/clear_cart.png) 0 0 no-repeat;
+	font-size: 13px;
+	font-family: "ProximaNova-Semibold",sans-serif;
+	line-height: 16px;
+	height: 14px;
+	margin-left: 30px;
+	margin-top: 11px;
+}
+.total-price-text {
+	font-size: 13px;
+	font-family: "ProximaNova-Semibold",sans-serif;
+	line-height: 19px;
+}
+.total-price {
+	font-size: 25px;
+	font-family: "ProximaNova-Semibold",sans-serif;
+	margin-top: 8px;
+}
+.cart-row-content .image_item img {
+	vertical-align: -32px;
+	margin-top: -32px;
+}
+.rules-delivery {
+	color: #000;
+	font-weight: bold;
+}
+	.rules-delivery:hover {
+		color: #000;
+		text-decoration: underline;
+		text-shadow: none;
+	}
+	
+.bb-order.btn-default {
+	padding: 14px 21px;
+}	

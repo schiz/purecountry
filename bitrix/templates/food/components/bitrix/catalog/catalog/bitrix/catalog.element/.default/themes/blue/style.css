@@ -1,0 +1,27 @@
+/* item_detail_v2 */
+
+/* item_detail_slider */
+.bx-touch .bx_item_detail .bx_item_slider .bx_slide ul li.bx_active a{
+	-webkit-border-image: url(images/x2border_active.png) 2 stretch;
+	-moz-border-image: url(images/x2border_active.png) 2 stretch;
+	-o-border-image: url(images/x2border_active.png) 2 stretch;
+	border-image: url(images/x2border_active.png) 2 fill stretch;
+}
+
+/* item_detail_scu */
+.bx-touch .bx_item_detail .bx_item_detail_scu .bx_scu ul li.bx_active a{
+	-webkit-border-image: url(images/x2border_active.png) 2 stretch;
+	-moz-border-image: url(images/x2border_active.png) 2 stretch;
+	-o-border-image: url(images/x2border_active.png) 2 stretch;
+	border-image: url(images/x2border_active.png) 2 fill stretch;
+}
+
+/* item_detail_size */
+.bx-touch .bx_item_detail .bx_item_detail_size ul li.bx_active a{
+	-webkit-border-image: url(images/x2border_active.png) 2 stretch;
+	-moz-border-image: url(images/x2border_active.png) 2 stretch;
+	-o-border-image: url(images/x2border_active.png) 2 stretch;
+	border-image: url(images/x2border_active.png) 2 fill stretch;
+}
+
+.bx_item_detail .bx_item_detail_size .bx_size ul li.bx_missing a{border: 1px solid #c0cfda !important}

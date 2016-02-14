@@ -1,0 +1,98 @@
+
+.catalog .catalog_list .preview-image { background-size: contain; }
+.catalog .item:hover .preview-image { box-shadow: none; }
+.catalog .wrap-index { margin-bottom: 32px; }
+.catalog .item {
+	z-index: 2;
+	transition: all .1s ease;
+}
+.catalog .wrap-index:hover {z-index: 8;}
+.catalog .wrap-index:hover .item {
+	margin: -10px;
+	padding: 10px;
+	box-shadow: 0 -1px 9px rgba(0,0,0,.21);
+	border-radius: 12px;
+	background: white;
+}
+.catalog .wrap-index h4 a:hover { color: #5388a4; }
+.catalog .item .catalog-item-link {
+	color: #000000;
+	text-decoration: none;
+}
+.catalog .item h4 { font-size: 16px; font-weight: normal; margin-top: 0; }
+.catalog .item .price {font-size: 17px; font-family: 'ProximaNova-Semibold';}
+.catalog .item .price .currency { font-size: 13px; }
+
+.item-info-part {
+	background: url(images/pack-info_after.png) bottom center no-repeat;
+	font-size: 12px;
+	line-height: 14px;
+}
+.item-info-part .pack-info {
+	display: block;
+	background: url("images/pack-info_icon.png") 32px center no-repeat;
+	padding: 22px 10px 22px 90px;
+}
+.carcass img {
+	margin: 0 auto;
+	display: block;
+	padding: 22px 0;
+}
+
+.item-info-part	.method {
+	background: url("images/d_method.png") 32px center no-repeat;
+	padding: 22px 10px 22px 90px;
+}
+.item-info-part	.place {
+	background: url("images/d_place.png") 32px center no-repeat;
+	padding: 22px 10px 22px 90px;
+}
+.item-info-part	.cert {
+	background: url("images/d_certif.png") 32px center no-repeat;
+	padding: 22px 10px 22px 90px;
+}
+	.item-info-part	.cert a { color: #000; }
+/*.buy-block {
+	border: 1px dotted #cccccc;
+	padding-top: 38px;
+	margin-bottom: 54px;
+}	
+.buy-block .price {
+	font-family: 'ProximaNova-Semibold';
+	font-size: 30px;
+	margin-bottom: 22px;
+}
+.buy-block .to_cart { 
+	margin-bottom: -20px;
+	height: 50px;
+	padding: 14px 42px;
+}	
+*/
+.catalog .wrap-index { margin-bottom: 32px; height: 250px; }
+
+.descr {
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding-right: 16px;
+}
+    .descr span { font-weight: bold; }
+    .descr table { width: 66%; }
+
+.catalog_list .buy-block {  
+    border: none;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.catalog_list .buy-block .price { margin-bottom: 8px; }
+.catalog_list .buy-block .to_cart {
+    margin-bottom: 0;
+    padding: 14px 35px;
+    margin-top: 8px;
+}
+.form-list-hide {
+    display: none;
+    /* height: 105px; */
+}
+.wrap-index:hover .form-list-hide {
+    display: block;
+}

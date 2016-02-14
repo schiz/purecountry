@@ -1,0 +1,25 @@
+.pager-lazy {
+	padding: 3px 0;
+	height: 42px;
+}
+.pager-lazy a {
+	display: inline-block;
+	width: 142px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 12px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: url(images/b_all.png) no-repeat;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
+}
+	.pager-lazy a:hover { color: #ebebeb; }
+
+.page-holder.open {
+	background: url(images/load.gif) 47px center no-repeat;
+	height: 48px;
+}
+	.page-holder.open .pager-lazy { display: none; }

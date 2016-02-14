@@ -1,0 +1,1 @@
+<?$arResult["ISODATE"] = ConvertDateTime($arResult["ACTIVE_FROM"],"Y-m-d");?>

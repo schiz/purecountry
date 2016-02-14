@@ -1,0 +1,32 @@
+.products .detail-picture {
+	margin: 26px 32px 8px 0;
+}
+.page-box {
+	position: relative;
+	-webkit-perspective:2000px;
+	-moz-perspective:2000px;
+	-o-perspective: 2000px;
+	perspective: 2000px;
+}
+
+.page-view.ng-enter,
+.page-view.ng-leave {
+	transition: .2s ease all;
+}
+
+.page-view.ng-enter,
+.page-view.ng-leave.ng-leave-active {
+	opacity:0;
+	-webkit-transform: scale(.98);
+}
+.page-view.ng-leave,
+.page-view.ng-enter.ng-enter-active {
+	opacity:1;
+	-webkit-transform: scale(1);
+}
+.page-view.ng-enter {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}

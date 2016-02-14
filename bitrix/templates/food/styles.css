@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('fonts/proximanova-reg.eot');
+    src: url('fonts/proximanova-reg.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-reg.woff') format('woff'),
+         url('fonts/proximanova-reg.ttf') format('truetype'),
+         url('fonts/proximanova-reg.otf') format('opentype'),
+         url('fonts/proximanova-reg.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('fonts/proximanova-bold.eot');
+    src: url('fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-bold.woff') format('woff'),
+         url('fonts/proximanova-bold.ttf') format('truetype'),
+         url('fonts/proximanova-bold.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'proxima_nova_rgregular';
+	font-size: 19px;
+	line-height: 26px;
+	color: #000;
+}
+h1 {
+	font-size: 38px;
+	font-family: 'proxima_nova_rgbold';
+	text-align: center;
+}
+h2 {
+	font-size: 28px;
+	font-family: 'proxima_nova_rgbold';
+	margin: 11px 0 0 0;
+	font-weight: bold;
+}
+h3 {
+	font-size: 24px;
+	font-family: 'proxima_nova_rgbold';
+	margin:30px 0 5px 0px;
+	text-align: center;
+	padding-bottom: 35px;
+	/*font-weight: bold;*/
+	background: url(images/static_social.png) bottom center no-repeat;
+}
+h4 {
+	font-size: 24px;
+	font-family: 'proxima_nova_rgbold';
+	margin:0px 0 15px 0px;
+	/*font-weight: bold;*/
+}
+.image { float:right;margin-left: 30px;}
+.image.center { float:none;margin-left:0px;}
+.image.center img { width:100%;}
+
+.image div { border: 1px #6D8492 solid;
+padding: 40px;}
+.image span {display: block;
+padding: 20px 0px 0px;
+font-size: 11px;
+color: #6D8492;
+text-align: center;
+font-style:italic;}
+.image.center span{ padding: 20px 20px 40px; text-align: left; }
+
+.anons.ng-binding {
+	background: url(images/static_social.png) bottom center no-repeat;
+	padding: 10px 0px;
+}
+
+.main.ng-binding ol {
+padding: 0;
+}
+.main.ng-binding ol li:before {
+color:#000;
+}
+
+p {
+	padding: 21px 0;
+	margin: 0;
+	line-height: 28px;
+}
+
+.first {
+       text-indent: 30px;
+}
+
+ol {
+    counter-reset:li; /* Инициализируем счетчик */
+    padding:0 0 20px 85px; /* Удаляем  установленное по умолчанию левое поле*/
+    list-style:none; /* Отменяем нумерацию установленную по умолчанию */
+  }
+  ol li {
+      position:relative; /* Создаем контекст для позиционирования элементов */
+      margin:0 0 6px 2em; /* Даем каждому элементу списка отступ слева, что бы освободить пространство для нумерации */
+      padding:0px 8px 8px 8px;;
+      }
+  ol li:before {
+      content:counter(li); /* В качестве данных используем счетчик */
+      counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+      /* Позиционируем и оформляем цифры */
+      position:absolute;
+      left:-2em;
+      width:2em;
+      padding:0;
+      color:#4f819c;
+      font-family: 'proxima_nova_rgbold';
+      text-align:center;
+      font-size: 25px;
+      }
+
+a { color: #5388a4; transition: text-shadow .2s ease; }
+a:hover {
+	text-decoration: none;
+	color: #5387a3 !important;
+	text-shadow: rgba(203,204,206,.7) 1px 1px 0px;
+}
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+a:active {
+	border: none;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.s-block {
+	color: black;
+	font-size: 16px;
+}
+	.s-block:hover {
+		text-decoration: none;
+	}
+	.s-block h3 {
+		font-size: 17px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin-bottom: 30px;
+	}
+		.s-block h3 big {
+			font-size: 27px;
+			letter-spacing: 5px;
+		}
+	.s-icon {
+		margin: 8px 26px 0 0;
+	}
+		.s-block p {
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+
+
+.reasons {
+	margin: 10px -24px 30px;
+}
+	.reasons .reason {
+		font-size: 16px;
+		line-height: 26px;
+		margin-top: 10px;
+	}
